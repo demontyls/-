@@ -1,17 +1,24 @@
-.card_box {
-    max-width: 1600px;
-    margin: o auto;
-    border: 5px solid #03a9f9;
+.body {
+    position: relative;
+    margin: 0;
     background-color: #03a9f4;
+    text-align: center;
+    display: flex;
+}
+
+.card_box {
+    width: 70%;
+    margin: 20px auto;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     justify-items: center;
+    visibility: hidden;
 }
 
 .card {
     position: relative;
     width: 50%;
-    height: 200px;
+    height: 170px;
     font-size: 100px;
     font-weight: 400;
     border: 5px solid #fff;
@@ -23,20 +30,121 @@
     cursor: pointer;
     transition:  0.7s;  
 }
+.card-arr-36 {
+    width: 55%;
+    height: 150px;
+    margin: 5px;
+}
+.card-arr-64 {
+    width: 60%;
+    height: 110px;
+    margin: 3px;
+    font-size: 80px;
+}
+.card-arr-100 {
+    width: 75%;
+    height: 95px;
+    margin: 2px;
+    font-size: 70px;
+}
+
 .card:hover {
     border: 5px solid #c5ff2a;
     transition:  0.7s;    
+}
+
+.disabled {
+    pointer-events: none;
 }
 
 .shirt {
     background-image: linear-gradient(to top, #95e1d3, #03a9f4);
     font-size: 0;
 }
-.disabled {
-    pointer-events: none;
-}
+
 .open {
     background: none;
-    font-size: 100px;
+    font-size: 7rem;
     border:5px solid #ffaa2a; 
 }
+
+.btn_new-game {
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    width: 300px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    border:#fff 1px solid;
+    border-radius: 20px;
+    background-color:  #03a9f4;
+    cursor: pointer;
+    visibility: hidden;
+
+}
+
+.btn_new-game:hover {
+    background-image: linear-gradient(to left, #95e1d3, #03a9f4);
+}
+
+.box-form {
+    width: 250px;
+}
+
+.form-text {
+    font-size: 20px;
+    color: #fff;
+}
+
+.form {
+    display: block;
+}
+
+.input {
+    width: 200px;
+    padding-left: 5px;
+    font-size: 17px;
+    border: #fff 1px solid;
+    border-radius: 5px;
+    background-color: #03a9f4;
+    outline: none;
+}
+
+.btn-start {
+    margin: 20px 0;
+    width: 200px;
+    height: 30px;
+    color: #fff;
+    border:#fff 1px solid;
+    border-radius: 20px;
+    background-color:#03a9f4;
+    font-size: 20px;
+    
+}
+
+.btn-start:hover{
+    background-image: linear-gradient(to left, #95e1d3, #03a9f4);
+}
+
+.counter {
+    font-size: 35px;
+    color: #fff;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.arr-36 {
+    grid-template-columns: 17% 17% 17% 17% 17% 17%;
+}
+
+.arr-64 {
+    grid-template-columns: 12% 12% 12% 12% 12% 12% 12% 12%;
+}
+
+.arr-100 {
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+}
+
+
